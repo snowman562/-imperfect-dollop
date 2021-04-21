@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Authors>Marko Pađen</Authors>
+    <Company>Marko Pađen</Company>
+    <Product>Imperfect Dollop Redis</Product>
+    <Description>Redis broker for Imperfect Dollop distributed in-memory cache</Description>
+    <Copyright>2019</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/notmarkopadjen/imperfect-dollop</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>redis, cache, broker, rpc</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIconUrl>https://raw.githubusercontent.com/notmarkopadjen/imperfect-dollop/master/Assets/icon.png</PackageIconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Paden.ImperfectDollop" Version="1.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

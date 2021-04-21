@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Authors>Marko Pađen</Authors>
+    <Company>Marko Pađen</Company>
+    <Product>Imperfect Dollop Prometheus</Product>
+    <Description>Prometheus endpoint manager for Imperfect Dollop distributed in-memory cache</Description>
+    <Copyright>2019</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/notmarkopadjen/imperfect-dollop</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>prometheus, cache, broker</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIconUrl>https://raw.githubusercontent.com/notmarkopadjen/imperfect-dollop/master/Assets/icon.png</PackageIconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Paden.ImperfectDollop" Version="1.0.0" />
+    <PackageReference Include="prometheus-net" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
